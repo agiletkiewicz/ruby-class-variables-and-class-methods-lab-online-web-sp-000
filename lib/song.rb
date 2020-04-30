@@ -43,7 +43,7 @@ class Song
     genre_count_array = {} 
     @@genres.each do |genre|
       if genre_count_array.include?(genre)
-        genre_count_array[genre] += 1
+        genre_count_array[genre]
     else
       genre_count_array[genre] = []
       genre_count_array[genre] << 1
