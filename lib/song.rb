@@ -40,7 +40,14 @@ class Song
   end
   
   def genre_count 
-    
+    genre_count_array = {} 
+    @@genres.each do |genre|
+      if genre_count_array.include?(genre)
+    else
+      genre_count_array[genre] = []
+      genre_count_array[genre] << [1]
+    end
+    end
   end
   
   
