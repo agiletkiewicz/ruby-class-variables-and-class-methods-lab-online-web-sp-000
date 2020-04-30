@@ -39,7 +39,9 @@ class Song
     unique_artist_array
   end
   
-  
+  def genre_count 
+    
+  end
   
   
 end
