@@ -39,7 +39,7 @@ class Song
     unique_artist_array
   end
   
-  def genre_count 
+  def self.genre_count 
     genre_count_array = {} 
     @@genres.each do |genre|
       if genre_count_array.include?(genre)
@@ -49,6 +49,7 @@ class Song
       genre_count_array[genre] << 1
     end
     end
+    genre_count_array
   end
   
   
