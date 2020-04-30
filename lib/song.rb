@@ -45,8 +45,7 @@ class Song
       if genre_count_array.include?(genre)
         genre_count_array[genre] += 1
     else
-      genre_count_array[genre] = []
-      genre_count_array[genre] << 1
+      genre_count_array[genre] = 1
     end
     end
     genre_count_array
