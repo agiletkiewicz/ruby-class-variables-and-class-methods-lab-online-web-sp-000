@@ -51,5 +51,17 @@ class Song
     genre_count_array
   end
   
+    def self.artist_count 
+    artist_count_array = {} 
+    @@artists.each do |artist|
+      if artist_count_array.include?(artist)
+        artist_count_array[artist] += 1
+    else
+      artist_count_array[artist] = 1
+    end
+    end
+    artist_count_array
+  end
+  
   
 end
