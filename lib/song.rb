@@ -37,8 +37,9 @@ def Song
       end
     end
     unique_artist_array
-    
   end
+  
+  
   
   
 end
